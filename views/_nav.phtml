@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header" style="background-color:lightgrey">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/products/1">Camera Body</a>
+        <a class="navbar-brand" href="/products/2">Lense</a>
+        <a class="navbar-brand" href="/products/3">Lense Filter</a>
+        <a class="navbar-brand" href="/products/4">Flash</a>
+        <a class="navbar-brand" href="/products/5">Tripod</a>
+        <a class="navbar-brand" href="/crud">Crud</a>
+        <a class="navbar-brand" href="/login">Login</a>
+        <a class="navbar-brand" href="/logout">LogOut</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse" style="background-color:lightgrey">
+        <ul class="nav navbar-nav navbar-right">
+            <li <?php if($this->sPage == "about.phtml") echo ' class="active" ' ?>><a href="/about">About</a></li>
+            <li><a href="http://mycamerasale.blogspot.ca/">Blog</a></li>
+            <li <?php if($this->sPage == "contact.phtml") echo ' class="active" ' ?>><a href="/contact">Contact</a></li>
+        </ul>
+    </div><!--/.nav-collapse -->
+</nav>
